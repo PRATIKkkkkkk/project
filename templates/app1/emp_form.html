@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Create {% endblock %}
+
+{% block content %}
+<form method="post" class="container bg bg-info rounded-pill">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-outline-success col-6">
+    <input type="reset" class="btn btn-outline-danger col-6 float-end">
+</form>
+{% endblock %}
