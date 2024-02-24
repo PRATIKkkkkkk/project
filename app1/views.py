@@ -30,7 +30,7 @@ def emp_update_view(request, pk):
             form.save()
             return redirect('list_url')
 
-    return render(request, 'app1/emp_update.html', {'form': form})
+    return render(request, 'app1/emp_form.html', {'form': form})
 
 
 def emp_delete_view(request, pk):
